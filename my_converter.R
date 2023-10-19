@@ -3,28 +3,6 @@ args <- commandArgs(trailingOnly = TRUE)
 DATA_PATH <- [path/to/karyotypes]
 RESULT_PATH <- args[result/pathway]
 
-#####test######
-#tttt <- "der(5)t(5;20),ins(X;11)(q22;p15p13),+inv(13)(p13q21),ins(X;11)(q22;p15p13),t(9;8),del(12)(p11p13),del(14)(q13),dup(14)(q24q32),der(4)t(3;4)(p2?;q12),-Y,t(9;22)(q34;q12),+i(17)(q10),+der(22)t(9;22),-der(10t(1;2)(q21;q11),+X,+add(6)(p11)"
-#tttt <- "der(5)t(5;20),ins(X11)(q22;p15p13),+inv(13(p13q21),ins(X;11)(q22;p15p13),t(9;8),del(12)(p11p13q11),del(14)(q13),dup(140(q24q32),der(4)t(3;4)(p2?;q12),-Y,t(9;22)(q34;q12),+i917)(q10),+der(22)t(9;22),-der(10t(1;2)(q21;q11),+X,+add(6(p11)"
-#tttt <-"der(4)t(3;4)(p2?;q12),t(9;22)(q34;q12),+der(22)t(9;22),-der(10t(1;2)(q21;q11),+X"
-#tttt <- "45,XX,-8,t(9;22)(q34;q11),der(8)t(8;14)(q11;q32)"
-#tttt <- "	47,XX,+12/48,idem,+3/46,idem,-11/45,XX,-11"
-#tttt <- "43,XX,-1,-6,-7,-11,-22,+2mar"
-#tttt <- "idic(17)(p11),idic(1)(q21)"
-#tttt <- "+der(22)t(9;22)(q34;q11)x2,add(18)(p11)x2"
-#tttt <- "46,XY,tas(1;7)(q44;p22),add(17)(p?),add(19)(p?),tas(1;19;22)(p36;p13;p13),tas(19;15;21)(q13;q26p13;p12)"
-#tttt <- "der(4;11)t(4;11)(p13;q13)hsr(11)(q13)"
-#tttt <- "+tas(1;19)(p36;p13)"
-#tttt <- "der(2)t(Y;2)(q11;p21)"
-#SVs[j] <- "+der(22)t(9;22)(q34;q11)x2,add(18)(p11)x2"
-#"der(X)t(X;11)(q22;q23)ins(X;11)(q22;p15p13)"
-#"der(13)t(13;15)(q12;q22)t(15;22)(q26;q11)"
-#"der(9)t(9;10)(q34;q22) or der(9)t(9;10)(q22;q11)"
-#SVs <- c("der(7)t(5;7)(p11;p11)t(7;9)t(5;7)(q23;q34)","t(7;9)(q34;p11)")
-
-#SVs <- unlist(strsplit(tttt, ","))
-#N_SVs <- length(SVs)
-
 ##########packages###########
 library(stringr)
 library(readr)
@@ -1093,18 +1071,6 @@ summary$cloned_NO <- cloned_numbers
 ########### save ##########
 #write(summary,"Mitelman_summary_1_15000.R")
 save(summary, file = sprintf("%s/Mitelman_summary_220204.RData", RESULT_PATH))      
-########## summary ##########
-#ssss <- rowSums(summary$result[,c(-1:-4)] != 0)
-#maxi <- max(ssss)
-#mini <- min(ssss)
-
-#which(ssss == maxi)  
-#which(ssss == mini)  
-
-#sorted <- sort(ssss)
-#which(ssss == sorted[-1])
-
-########################        
 
 
 
