@@ -1,7 +1,7 @@
 options(echo=F)
 args <- commandArgs(trailingOnly = TRUE)
-DATA_PATH <- args[1]
-RESULT_PATH <- args[2]
+DATA_PATH <- [path/to/karyotypes]
+RESULT_PATH <- args[result/pathway]
 
 #####test######
 #tttt <- "der(5)t(5;20),ins(X;11)(q22;p15p13),+inv(13)(p13q21),ins(X;11)(q22;p15p13),t(9;8),del(12)(p11p13),del(14)(q13),dup(14)(q24q32),der(4)t(3;4)(p2?;q12),-Y,t(9;22)(q34;q12),+i(17)(q10),+der(22)t(9;22),-der(10t(1;2)(q21;q11),+X,+add(6)(p11)"
